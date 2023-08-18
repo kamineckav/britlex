@@ -310,6 +310,7 @@ li {
 .pricing-item-price {
   color: var(--btn-bg-cl);
   font-size: 18px;
+  margin-right: 10px;
 }
 
 /* ----------------------- */
@@ -353,6 +354,11 @@ li {
   font-weight: 500;
   margin-top: 17px;
 }
+
+
+/* ----------------------- */
+/* ----- F O O T E R ----- */
+/* ----------------------- */
 
 .footer-section > .container {
   padding-bottom: 48px;
