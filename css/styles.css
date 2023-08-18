@@ -1,0 +1,385 @@
+:root {
+  --title-cl: #000;
+  --title-second-cl: #263238;
+  --btn-bg-cl: #263238;
+  --text-cl: #8f95a5;
+  --btn-text-cl: #fff;
+  --text-second-cl: #546269;
+  --prising-inf-cl: #eee;
+  --logo-participle-cl: #939393;
+  --burger-btn-cl: #39515e;
+  --skills-item-bg-cl: #f5f5f5;
+}
+
+body {
+  background-color: var(--btn-text-cl);
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: var(--text-cl);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border-style: none;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 292px;
+  width: 100%;
+  padding-right: 14px;
+  padding-left: 14px;
+  margin: 0 auto;
+}
+
+.title {
+  color: var(--title-cl);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ------------------- */
+/* ------ HEADER ----- */
+/* ------------------- */
+
+.header {
+  padding-top: 36px;
+}
+
+.header-section > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header-section {
+  padding-bottom: 30px;
+}
+
+.header-logo {
+  color: var(--title-cl);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.header-logo-participle {
+  color: #939393;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.header-nav-list {
+  display: none;
+}
+
+.header-btn {
+  border: transparent;
+  background-color: transparent;
+}
+.header-menu-icon {
+  fill: var(--burger-btn-cl);
+}
+
+/* ------------------- */
+/* ----- H E R 0 ----- */
+/* ------------------- */
+
+.hero-section {
+  padding-bottom: 80px;
+}
+
+.hero-box-img {
+  max-width: 300px;
+  max-height: 300px;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  color: var(--title-cl);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+.hero-icon {
+  display: none;
+}
+.hero-text {
+  text-align: center;
+  margin-bottom: 33px;
+}
+.hero-btn {
+  border-radius: 5px;
+  background-color: var(--btn-bg-cl);
+  padding: 18px 99px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ----------------------- */
+/* ----- S K I L L S ----- */
+/* ----------------------- */
+
+.skills-section {
+  padding-bottom: 80px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  max-width: 290px;
+}
+
+.skills-item {
+  border-radius: 5px;
+  background-color: var(--skills-item-bg-cl);
+  padding: 8px 16px 45px;
+}
+
+.skills-item-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.skills-item-title {
+  color: var(--title-second-cl);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
+.skills-item-text {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.skills-item-btn {
+  border-radius: 5px;
+  background: var(--btn-bg-cl);
+  padding: 14px 49px;
+  color: var(--btn-text-cl);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ----------------------- */
+/* ------ ABOUT- US ------ */
+/* ----------------------- */
+
+.about-section > .container {
+  max-width: 295px;
+}
+
+.about-section {
+  padding-bottom: 80px;
+}
+
+.about-box-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+}
+
+.about-text {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 35px;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+.about-item-figure {
+  color: #2a3246;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+.about-item-text {
+  font-size: 15px;
+}
+
+/* ----------------------- */
+/* ---- P R I C I N G ---- */
+/* ----------------------- */
+
+.pricing-section {
+  margin-bottom: 80px;
+}
+
+.pricing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 63px;
+  max-width: 272px;
+}
+
+.pricing-item-box-img {
+  margin-bottom: 28px;
+}
+
+.pricing-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-item-title {
+  color: var(--btn-bg-cl);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: 17px;
+}
+.pricing-item-descr {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+
+.pricing-item-text {
+  max-width: 140px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: var(--prising-inf-cl);
+  color: var(--text-second-cl);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pricing-item-price {
+  color: var(--btn-bg-cl);
+  font-size: 18px;
+}
+
+/* ----------------------- */
+/* ---- C O N T A C T ---- */
+/* ----------------------- */
+
+.contact-section > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section {
+  padding-bottom: 55px;
+}
+
+.contact-img-box {
+  margin-bottom: 36px;
+}
+
+.contact-text {
+  max-width: 267px;
+  margin-bottom: 31px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.contact-input {
+  border-radius: 5px;
+  border: 1px solid var(--text-cl);
+  padding: 16px 25px;
+  width: 238px;
+}
+
+.contact-btn {
+  border-radius: 5px;
+  background-color: var(--btn-bg-cl);
+  padding: 20px 110px;
+  color: var(--btn-text-cl);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 17px;
+}
+
+.footer-section > .container {
+  padding-bottom: 48px;
+}
+
+.footer-nav {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  color: var(--title-cl);
+  font-size: 24px;
+}
+
+.footer-logo-participle {
+  color: var(--logo-participle-cl);
+  font-size: 24px;
+}
+
+.footer-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-link {
+  color: var(--text-cl);
+  font-size: 11px;
+  font-weight: 500;
+}
