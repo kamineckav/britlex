@@ -89,7 +89,7 @@ li {
 /* ------------------- */
 
 .header {
-  padding-top: 36px;
+  padding-top: 16px;
 }
 
 .header-section > .container {
@@ -99,7 +99,7 @@ li {
 }
 
 .header-section {
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .header-logo {
@@ -134,9 +134,13 @@ li {
   padding-bottom: 80px;
 }
 
+.hero-section> .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero-box-img {
-  max-width: 300px;
-  max-height: 300px;
   margin-bottom: 16px;
 }
 
@@ -175,6 +179,7 @@ li {
 .skills-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 21px;
   max-width: 290px;
 }
@@ -262,6 +267,13 @@ li {
 /* ---- P R I C I N G ---- */
 /* ----------------------- */
 
+.pricing-section> .container {
+    max-width: 272px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .pricing-section {
   margin-bottom: 80px;
 }
@@ -270,7 +282,6 @@ li {
   display: flex;
   flex-direction: column;
   gap: 63px;
-  max-width: 272px;
 }
 
 .pricing-item-box-img {
@@ -338,11 +349,27 @@ li {
   font-size: 14px;
 }
 
+.contact-label {
+    width: 100%;
+}
+
 .contact-input {
   border-radius: 5px;
   border: 1px solid var(--text-cl);
   padding: 16px 25px;
   width: 238px;
+  background-color: transparent;
+  color: var(--title-second-cl);
+}
+
+.contact-input:focus {
+    outline: none;
+    border-color: var(--btn-bg-cl);
+}
+
+.contact-input::placeholder {
+    color: var(--text-cl);
+
 }
 
 .contact-btn {
@@ -361,10 +388,13 @@ li {
 /* ----------------------- */
 
 .footer-section > .container {
-  padding-bottom: 48px;
+    max-width: 294px;
+    padding-bottom: 48px;
+    border-top: 1px solid #c4c4c4;
 }
 
 .footer-nav {
+    margin-top: 26px;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -381,11 +411,28 @@ li {
 
 .footer-list {
   display: flex;
-  gap: 10px;
+  gap: 11px;
 }
 
 .footer-link {
   color: var(--text-cl);
   font-size: 11px;
   font-weight: 500;
+}
+
+.current {  
+  color: var(--text-cl);
+  position: relative;
+}
+
+.current::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 4px;
+    width: 4px;
+    left: 103%;
+    bottom: 7px;
+  background-color: var(--text-cl);
+  border-radius: 2px;
 }
