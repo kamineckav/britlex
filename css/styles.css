@@ -139,6 +139,7 @@ li {
   justify-content: space-between;
 }
 
+
 .mob-menu {
   position: fixed;
   top: 0;
@@ -193,9 +194,9 @@ li {
   content: "";
   position: absolute;
   display: block;
-  height: 4px;
+  height: 1px;
   width: 100%;
-  bottom: -20px;
+  bottom: 340px;
   background-color: var(--text-cl);
   border-radius: 2px;
 }
