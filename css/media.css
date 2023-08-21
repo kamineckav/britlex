@@ -1,0 +1,11 @@
+@media screen and (max-width: 574px) {
+  .mob-menu > .container {
+    max-width: 544px;
+    width: 100%;
+  }
+
+  .header-section > .container {
+    max-width: 544px;
+    width: 100%;
+  }
+}
