@@ -17,8 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -47,23 +47,24 @@
             </ul>
           </nav>
           <button class="header-btn" type="button" data-menu-open>
-            <svg class="header-menu-icon" width="33" height="19">
+            <svg class="header-menu-icon">
               <use href="./images/symbol-defs.svg#icon-burger-menu-mob"></use>
             </svg>
           </button>
         </div>
 
-        <div class="mob-menu is-hidden" data-menu>
-          <div class="container">
-            <button class="menu-close-btn" type="button" data-menu-close>
-              <svg class="menu-close-icon" width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-close"></use>
-              </svg>
-            </button>
+        <div class="mob-menu-gradient is-hidden" data-menu>
+          <div class="mob-menu">
+            <div class="container">
+              <button class="menu-close-btn" type="button" data-menu-close>
+                <svg class="menu-close-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </button>
               <div>
-                  <a class="mob-menu-logo" href="./index.html"
-                    >Brit<span class="mob-menu-logo-participle">Lex</span></a
-                  >
+                <a class="mob-menu-logo" href="./index.html"
+                  >Brit<span class="mob-menu-logo-participle">Lex</span></a
+                >
                 <ul class="mob-menu-nav-list menu-line">
                   <li class="mob-menu-nav-item">
                     <a class="mob-menu-nav-link" href="./index.html">Home</a>
@@ -83,6 +84,7 @@
                 </ul>
               </div>
               <button class="mob-menu-btn" type="button">Let’s Talk</button>
+            </div>
           </div>
         </div>
       </section>
@@ -121,10 +123,7 @@
             </picture>
           </div>
           <div class="hero-info">
-            <h1 class="hero-title">
-              Learn Any <br />
-              Foreign Language
-            </h1>
+            <h1 class="hero-title">Learn Any Foreign Language</h1>
             <svg class="hero-icon" width="85" height="85">
               <use href="./images/symbol-defs.svg#icon-light-bulb"></use>
             </svg>
@@ -289,12 +288,16 @@
                   />
                 </picture>
               </div>
-              <h3 class="skills-item-title">Listening</h3>
-              <p class="skills-item-text">
-                Here you can find activities to practise your listening skills.
-                Listening will help you to improve your understanding
-              </p>
-              <button class="skills-item-btn" type="button">Learn more</button>
+              <div>
+                <h3 class="skills-item-title">Listening</h3>
+                <p class="skills-item-text">
+                  Here you can find activities to practise your listening
+                  skills. Listening will help you to improve your understanding
+                </p>
+                <button class="skills-item-btn" type="button">
+                  Learn more
+                </button>
+              </div>
             </li>
           </ul>
         </div>
@@ -302,7 +305,7 @@
 
       <section class="about-section">
         <div class="container">
-          <h2 class="about-title title">About Us</h2>
+          <h2 class="about-title-mob title">About Us</h2>
           <div class="about-box-img">
             <picture>
               <source
@@ -332,7 +335,8 @@
               />
             </picture>
           </div>
-          <div>
+          <div class="about-inf">
+            <h2 class="about-title title">About Us</h2>
             <p class="about-text">
               The model offers a framework for discussing problems related to
               the user's experience, as well as possible ways and means of

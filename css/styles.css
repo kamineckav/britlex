@@ -124,6 +124,8 @@ li {
 }
 .header-menu-icon {
   fill: var(--burger-btn-cl);
+  width: 33px;
+  height:19px;
 }
 
 /* ------------------- */
@@ -248,7 +250,8 @@ li {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.5em;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  max-width: 220px;
 }
 .hero-icon {
   display: none;
@@ -256,6 +259,7 @@ li {
 .hero-text {
   text-align: center;
   margin-bottom: 33px;
+  margin-top: 20px;
 }
 .hero-btn {
   border-radius: 5px;
@@ -332,6 +336,10 @@ li {
   display: flex;
   justify-content: center;
   margin-bottom: 23px;
+}
+
+.about-title {
+  display: none;
 }
 
 .about-text {
