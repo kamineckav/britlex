@@ -448,6 +448,10 @@ li {
   margin-bottom: 36px;
 }
 
+.contact-title {
+  display: none;
+}
+
 .contact-text {
   max-width: 267px;
   margin-bottom: 31px;

@@ -181,4 +181,102 @@
   .about-box-img {
     margin-bottom: 0;
   }
+
+  .pricing-section > .container {
+    max-width: 728px;
+  }
+
+  .pricing-title {
+    margin-bottom: 31px;
+  }
+
+  .pricing-list {
+    flex-direction: row;
+    gap: 36px;
+    align-items: flex-end;
+  }
+
+  .pricing-item {
+    align-items: start;
+  }
+
+  .pricing-item-box-img {
+    margin-bottom: 23px;
+  }
+
+  .pricing-item-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    height: 56px;
+    text-align: left;
+  }
+
+  /* .pricing-item-title:nth-child(2),
+  .pricing-item-title:nth-child(3) {
+    max-width: 112px;
+  } */
+
+  .pricing-item-descr {
+    font-size: 14px;
+    margin-bottom: 6px;
+    height: 84px;
+    text-align: left;
+  }
+
+  .pricing-item-text {
+    width: 100%;
+    padding: 10px 23px 10px 12px;
+    font-size: 16px;
+  }
+
+  .pricing-item-price {
+    font-size: 22px;
+  }
+
+  .contact-title-mob {
+    display: none;
+  }
+
+  .contact-section > .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-img-box {
+    margin-bottom: 0;
+    margin-right: 36px;
+  }
+  .contact-title {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .contact-text {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+  .contact-form {
+    flex-direction: row;
+  }
+
+  .contact-btn {
+    padding: 15px 40px;
+    margin-top: 0;
+    margin-left: 6px;
+  }
+
+  .footer-section> .container {
+    max-width: 720px;
+    padding: 15px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .current::before {
+    bottom: 5px;
+  }
 }
