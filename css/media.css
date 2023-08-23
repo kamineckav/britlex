@@ -116,6 +116,9 @@
 
   .skills-item {
     padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .skills-item:nth-child(1) {
@@ -268,7 +271,7 @@
     margin-left: 6px;
   }
 
-  .footer-section> .container {
+  .footer-section > .container {
     max-width: 720px;
     padding: 15px;
     display: flex;
@@ -278,5 +281,217 @@
 
   .current::before {
     bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 1338px) {
+  .container {
+    max-width: 1308px;
+  }
+
+  .header-section > .container {
+    max-width: 1308px;
+  }
+
+  .header-burger-btn {
+    display: none;
+  }
+
+  .header-logo,
+  .header-logo-participle {
+    font-size: 36px;
+  }
+
+  .header-nav-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .header-nav-btn {
+    display: block;
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #263238;
+    padding: 17px 57px;
+  }
+
+  .header-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-nav-link {
+    color: #263238;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .hero-section > .container {
+    align-items: center;
+    gap: 57px;
+  }
+
+  .hero-title {
+    font-size: 64px;
+    max-width: 386px;
+  }
+
+  .hero-text {
+    font-size: 24px;
+    max-width: 570px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+
+  .hero-btn {
+    font-size: 36px;
+    border-radius: 15px;
+    padding: 32px 117px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .skills-list {
+    grid-column-gap: 18px;
+    grid-row-gap: 20px;
+    max-width: 100%;
+  }
+
+  .skills-item {
+    padding: 28px;
+  }
+
+  .skills-item-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .skills-item-text {
+    font-size: 16px;
+    margin-bottom: 36px;
+  }
+
+  .skills-item-btn {
+    padding: 15px 50px;
+    font-size: 18px;
+  }
+
+  .about-section> .container {
+    width: 100%;
+    max-width: 1308px;
+    align-items: center;
+  }
+
+  .about-inf {
+    max-width: 635px;
+  }
+
+  .about-text {
+    margin-bottom: 50px;
+  }
+
+  .about-text {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .about-list {
+    justify-content: space-around;
+  }
+
+  .about-item {
+    font-size: 20px;
+  }
+
+  .about-item-figure {
+    font-size: 48px;
+  }
+
+  .pricing-section > .container {
+    width: 100%;
+    max-width: 1308px;
+  }
+
+  .pricing-item-title {
+    font-size: 30px;
+  }
+
+  .pricing-item-descr {
+    font-size: 20px;
+  }
+
+  .pricing-list {
+    gap: 50px;
+  }
+
+  .pricing-item {
+    width: calc((100% - 100px) / 3);
+  }
+
+  .pricing-item-text {
+    font-size: 18px;
+    width: auto;
+  }
+
+  .pricing-item-price {
+    font-size: 30px;
+  }
+
+  .contact-img-box {
+    margin-right: 104px;
+  }
+
+  .contact-title {
+    margin-bottom: 37px;
+  }
+
+  .contact-text {
+    font-size: 20px;
+    margin-bottom: 52px;
+  }
+
+  .contact-input {
+    padding: 28px 33px; 
+    max-width: 450px;
+    border-radius: 10px;
+  }
+
+  .contact-btn {
+    padding: 25px 80px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 12px;
+  }
+
+  .footer-section > .container {
+    width: 100%;
+    max-width: 1308px;
+  }
+
+  .footer-logo, .footer-logo-participle {
+    font-size: 36px;
+  }
+
+  .footer-list {
+    gap: 26px;
+  }
+
+  .footer-link {
+    font-size: 24px;
+  }
+
+  .current::before {
+    height: 6px;
+  width: 6px;
+  bottom: 10px;
+  left: 105%;
+  border-radius: 15px;
   }
 }

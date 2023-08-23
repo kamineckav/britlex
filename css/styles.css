@@ -90,16 +90,13 @@ li {
 
 .header {
   padding-top: 25px;
+  padding-bottom: 16px;
 }
 
 .header-section > .container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-
-.header-section {
-  padding-bottom: 16px;
 }
 
 .header-logo {
@@ -109,7 +106,7 @@ li {
 }
 
 .header-logo-participle {
-  color: #939393;
+  color: var(--logo-participle-cl);
   font-size: 24px;
   font-weight: 400;
 }
@@ -118,14 +115,19 @@ li {
   display: none;
 }
 
-.header-btn {
+.header-burger-btn {
   border: transparent;
   background-color: transparent;
 }
+
+.header-nav-btn {
+  display: none;
+}
+
 .header-menu-icon {
   fill: var(--burger-btn-cl);
   width: 33px;
-  height:19px;
+  height: 19px;
 }
 
 /* ------------------- */
@@ -140,7 +142,6 @@ li {
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 .mob-menu {
   position: fixed;
@@ -381,7 +382,7 @@ li {
 }
 
 .pricing-section {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .pricing-list {
@@ -549,7 +550,7 @@ li {
   height: 4px;
   width: 4px;
   left: 103%;
-  bottom: 7px;
+  bottom: 5px;
   background-color: var(--text-cl);
   border-radius: 2px;
 }
