@@ -265,10 +265,17 @@ li {
 .hero-btn {
   border-radius: 5px;
   background-color: var(--btn-bg-cl);
+  border: 2px solid var(--btn-bg-cl, #263238);
   padding: 18px 86px;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
+  transition: box-shadow 200ms ease-out;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  box-shadow: 3px 3px 4px 2px rgb(0, 0, 0, 0.3);
 }
 
 /* ----------------------- */
@@ -319,6 +326,12 @@ li {
   color: var(--btn-text-cl);
   font-size: 14px;
   font-weight: 500;
+  transition: box-shadow 200ms ease-out;
+}
+
+.skills-item-btn:hover,
+.skills-item-btn:focus {
+  box-shadow: 2px 2px 4px 2px rgb(0, 0, 0, 0.3);
 }
 
 /* ----------------------- */
@@ -486,6 +499,7 @@ li {
 }
 
 .contact-input::placeholder {
+  font-size: 14px;
   color: var(--text-cl);
 }
 
@@ -497,6 +511,12 @@ li {
   font-size: 14px;
   font-weight: 500;
   margin-top: 17px;
+  transition: box-shadow 200ms ease-out;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  box-shadow: 2px 2px 4px 2px rgb(0, 0, 0, 0.3);
 }
 
 /* ----------------------- */

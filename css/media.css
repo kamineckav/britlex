@@ -309,13 +309,20 @@
 
   .header-nav-btn {
     display: block;
-    color: #000;
+    color: var(--title-cl, #000);
     font-size: 24px;
     font-weight: 400;
     background-color: transparent;
     border-radius: 5px;
-    border: 2px solid #263238;
+    border: 2px solid var(--btn-bg-cl, #263238);
     padding: 17px 57px;
+    transition: background-color 200ms ease-out, color 200ms ease-out;
+  }
+
+  .header-nav-btn:hover,
+  .header-nav-btn:focus {
+    background-color: var(--btn-bg-cl, #263238);
+    color: var(--btn-text-cl, #fff);
   }
 
   .header-nav {
@@ -326,9 +333,19 @@
   }
 
   .header-nav-link {
-    color: #263238;
+    color: var(--title-second-cl, #263238);
     font-size: 20px;
     font-weight: 500;
+    border-radius: 5px;
+    padding: 5px;
+    transition: background-color 200ms ease-out, color 200ms ease-out;
+  }
+
+  .header-nav-link:hover,
+  .header-nav-link:focus {
+    background-color: var(--btn-bg-cl, #263238);
+    color: var(--btn-text-cl, #fff);
+    border-radius: 5px;
   }
 
   .hero-section > .container {
@@ -383,7 +400,7 @@
     font-size: 18px;
   }
 
-  .about-section> .container {
+  .about-section > .container {
     width: 100%;
     max-width: 1308px;
     align-items: center;
@@ -458,9 +475,14 @@
   }
 
   .contact-input {
-    padding: 28px 33px; 
+    padding: 28px 33px;
     max-width: 450px;
     border-radius: 10px;
+  }
+
+  .contact-input::placeholder {
+    font-size: 20px;
+    color: var(--text-cl);
   }
 
   .contact-btn {
@@ -475,7 +497,8 @@
     max-width: 1308px;
   }
 
-  .footer-logo, .footer-logo-participle {
+  .footer-logo,
+  .footer-logo-participle {
     font-size: 36px;
   }
 
@@ -484,14 +507,14 @@
   }
 
   .footer-link {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .current::before {
     height: 6px;
-  width: 6px;
-  bottom: 10px;
-  left: 105%;
-  border-radius: 15px;
+    width: 6px;
+    bottom: 10px;
+    left: 105%;
+    border-radius: 15px;
   }
 }
