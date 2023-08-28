@@ -1,6 +1,6 @@
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 767px) {
   .mob-menu > .container {
-    max-width: 544px;
+    max-width: 767px;
     width: 100%;
   }
 }
@@ -72,6 +72,8 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
+    position: relative;
+    width:85; height:85;
   }
 
   .hero-box-img {
@@ -92,18 +94,14 @@
     margin-top: 25px;
   }
 
-  /* .hero-icon {
+  .hero-img-light {
+    width: 70px;
+    height: 70px;
     display: flex;
-    position: relative;
-  }
-
-  .hero-icon::after {
-    content: "";
     position: absolute;
-    display: block;
-    width: 100%;
-  bottom: 340px;
-   } */
+    top: 68px;
+    left: 185px;
+  }
 
   .skills-list {
     display: grid;
@@ -214,11 +212,6 @@
     text-align: left;
   }
 
-  /* .pricing-item-title:nth-child(2),
-  .pricing-item-title:nth-child(3) {
-    max-width: 112px;
-  } */
-
   .pricing-item-descr {
     font-size: 14px;
     margin-bottom: 6px;
@@ -281,6 +274,34 @@
 
   .current::before {
     bottom: 5px;
+  }
+
+  .modal {
+    padding-left: 50px;
+  }
+  .modal-logo,
+  .modal-logo-participle {
+    font-size: 30px;
+  }
+  .modal-form {
+    gap: 30px;
+  }
+  .modal-form-part {
+    gap: 8px;
+  }
+  .modal-form-title {
+    font-size: 24px;
+  }
+  .modal-input,
+  .modal-textarea {
+    max-width: 350px;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .modal-btn {
+    padding: 15px 25px;
+    max-width: 200px;
+    font-size: 24px;
   }
 }
 
@@ -363,6 +384,12 @@
     max-width: 570px;
     margin-bottom: 60px;
     margin-top: 40px;
+  }
+  .hero-img-light {
+    width: 120px;
+    height: 120px;
+    top: 128px;
+    left: 320px;
   }
 
   .hero-btn {

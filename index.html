@@ -30,25 +30,30 @@
             >
             <ul class="header-nav-list">
               <li class="header-nav-item">
-                <a class="header-nav-link" href="#">Home</a>
+                <a class="header-nav-link" href="#home">Home</a>
               </li>
               <li class="header-nav-item">
-                <a class="header-nav-link" href="#">Skills</a>
+                <a class="header-nav-link" href="#skills">Skills</a>
               </li>
               <li class="header-nav-item">
-                <a class="header-nav-link" href="#">About Us</a>
+                <a class="header-nav-link" href="#about-us">About Us</a>
               </li>
               <li class="header-nav-item">
-                <a class="header-nav-link" href="#">Pricing</a>
+                <a class="header-nav-link" href="#prising">Pricing</a>
               </li>
               <li class="header-nav-item">
-                <a class="header-nav-link" href="#">Contacts</a>
+                <a class="header-nav-link" href="#contacts">Contacts</a>
               </li>
             </ul>
-            <button class="header-nav-btn" type="button">Let’s Talk</button>
+            <button class="header-nav-btn" type="button">
+              Let's Talk
+            </button>
           </nav>
           <button class="header-burger-btn" type="button" data-menu-open>
-            <svg class="header-menu-icon">
+            <svg
+              class="header-menu-icon"
+              aria-label="button that opens the menu"
+            >
               <use href="./images/symbol-defs.svg#icon-burger-menu-mob"></use>
             </svg>
           </button>
@@ -84,7 +89,7 @@
                   </li>
                 </ul>
               </div>
-              <button class="mob-menu-btn" type="button">Let’s Talk</button>
+              <button class="mob-menu-btn" type="button">Let's Talk</button>
             </div>
           </div>
         </div>
@@ -92,7 +97,7 @@
     </header>
 
     <main>
-      <section class="hero-section">
+      <section class="hero-section" id="home">
         <div class="container">
           <div class="hero-box-img">
             <picture>
@@ -125,19 +130,25 @@
           </div>
           <div class="hero-info">
             <h1 class="hero-title">Learn Any Foreign Language</h1>
-            <svg class="hero-icon" width="85" height="85">
-              <use href="./images/symbol-defs.svg#icon-light-bulb"></use>
-            </svg>
+            <picture class="hero-img-light">
+              <source srcset="./images/tablet/light-bulb-tab.png 1x, 
+              ./images/tablet/light-bulb-tab-2x.png 2x" media="(min-width: 768px)">
+              <source srcset="./images/desktop/light-bulb-desk.png 1x, 
+              ./images/desktop/light-bulb-desk-2x.png 2x" media="(min-width: 1338px)">
+              <img src="./images/tablet/light-bulb-tab.png" alt="light">
+            </picture>
             <p class="hero-text">
               With our teachers who write a program for each student, you will
               be able to make your first sketch after the first lesson.
             </p>
-            <button class="hero-btn" type="submit">Get started</button>
+            <button class="hero-btn" type="submit" data-modal-open>
+              Get started
+            </button>
           </div>
         </div>
       </section>
 
-      <section class="skills-section">
+      <section class="skills-section" id="skills">
         <div class="container">
           <h2 class="skills-title title">Skills</h2>
           <ul class="skills-list">
@@ -180,10 +191,12 @@
                 </p>
                 <p class="skills-item-text">
                   Learn English online and improve your skills through our
-                  high-quality courses and resources – all designed for adult
+                  high-quality courses and resources - all designed for adult
                   language learners.
                 </p>
-                <button class="skills-item-btn" type="button">Learn more</button>
+                <button class="skills-item-btn" type="button">
+                  Learn more
+                </button>
               </div>
             </li>
             <li class="skills-item">
@@ -223,7 +236,9 @@
                   science, the science that studies substances, also their
                   composition
                 </p>
-                <button class="skills-item-btn" type="button">Learn more</button>
+                <button class="skills-item-btn" type="button">
+                  Learn more
+                </button>
               </div>
             </li>
             <li class="skills-item">
@@ -262,7 +277,9 @@
                   perception and response actions of the user resulting from the
                   use and/or upcoming use of the product, system or service
                 </p>
-                <button class="skills-item-btn" type="button">Learn more</button>
+                <button class="skills-item-btn" type="button">
+                  Learn more
+                </button>
               </div>
             </li>
             <li class="skills-item">
@@ -300,7 +317,8 @@
                   <h3 class="skills-item-title">Listening</h3>
                   <p class="skills-item-text">
                     Here you can find activities to practise your listening
-                    skills. Listening will help you to improve your understanding
+                    skills. Listening will help you to improve your
+                    understanding
                   </p>
                   <button class="skills-item-btn" type="button">
                     Learn more
@@ -312,7 +330,7 @@
         </div>
       </section>
 
-      <section class="about-section">
+      <section class="about-section" id="about-us">
         <div class="container">
           <h2 class="about-title-mob title">About Us</h2>
           <div class="about-box-img">
@@ -372,7 +390,7 @@
         </div>
       </section>
 
-      <section class="pricing-section">
+      <section class="pricing-section" id="prising">
         <div class="container">
           <h2 class="pricing-title title">Pricing</h2>
           <ul class="pricing-list">
@@ -479,7 +497,7 @@
               </div>
               <h3 class="pricing-item-title">Personal Tuition</h3>
               <p class="pricing-item-descr">
-                Online one-to-one English tutoring – enjoy our first session for
+                Online one-to-one English tutoring - enjoy our first session for
                 only $1
               </p>
               <p class="pricing-item-text">
@@ -490,7 +508,7 @@
         </div>
       </section>
 
-      <section class="contact-section">
+      <section class="contact-section" id="contacts">
         <div class="container">
           <h2 class="contact-title-mob title">Contact Us</h2>
           <div class="contact-img-box">
@@ -523,7 +541,8 @@
             <h2 class="contact-title title">Contact Us</h2>
             <p class="contact-text">
               Discover your current English level by taking our free online
-              English test. Sign up to our newsletter for learning tips and free resources
+              English test. Sign up to our newsletter for learning tips and free
+              resources
             </p>
             <form class="contact-form">
               <label class="contact-label">
@@ -537,7 +556,7 @@
               </label>
               <button class="contact-btn" type="submit">Subscribe</button>
             </form>
-          </div class="">
+          </div>
         </div>
       </section>
     </main>
@@ -566,7 +585,48 @@
       </section>
     </footer>
 
+    <div class="modal is-hidden" data-modal>
+      <div class="container">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="modal-logo-box">
+          <a class="modal-logo" href="./index.html"
+            >Brit<span class="modal-logo-participle">Lex</span></a
+          >
+        </div>
+
+        <form class="modal-form">
+          <div class="modal-form-part">
+            <p class="modal-form-title">Name</p>
+            <label class="modal-label" for="username">
+              <input class="modal-input" id="username" name="name" type="text" required placeholder="Your name">
+            </label>
+          </div>
+          
+          <div class="modal-form-part">
+            <p class="modal-form-title">Email</p>
+            <label class="modal-label" for="email">
+              <input class="modal-input" id="email" name="email" type="email" required placeholder="Your email">
+            </label>
+          </div>
+          
+          <div class="modal-form-part">
+            <p class="modal-form-title">Comment</p>
+            <label class="modal-label" for="comment">
+              <textarea class="modal-textarea" id="comment" name="comment" rows="5" placeholder="Comment"></textarea>
+            </label>
+          </div>
+          
+          <button class="modal-btn" type="submit">Get started</button>
+        </form>
+      </div>
+    </div>
+
     <script src="./js/menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
