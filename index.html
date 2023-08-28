@@ -586,44 +586,46 @@
       </section>
     </footer>
 
-    <div class="modal is-hidden" data-modal>
-      <div class="container">
-        <button class="modal-close-btn" type="button" data-modal-close>
-          <svg width="40" height="40">
-            <use href="./images/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </button>
-
-        <div class="modal-logo-box">
-          <a class="modal-logo" href="./index.html"
-            >Brit<span class="modal-logo-participle">Lex</span></a
-          >
+    <div class="modal-gradient is-hidden" data-modal>
+      <div class="modal">
+        <div class="container">
+          <button class="modal-close-btn" type="button" data-modal-close>
+            <svg width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+  
+          <div class="modal-logo-box">
+            <a class="modal-logo" href="./index.html"
+              >Brit<span class="modal-logo-participle">Lex</span></a
+            >
+          </div>
+  
+          <form class="modal-form">
+            <div class="modal-form-part">
+              <p class="modal-form-title">Name</p>
+              <label class="modal-label" for="username">
+                <input class="modal-input" id="username" name="name" type="text" required placeholder="Your name">
+              </label>
+            </div>
+            
+            <div class="modal-form-part">
+              <p class="modal-form-title">Email</p>
+              <label class="modal-label" for="email">
+                <input class="modal-input" id="email" name="email" type="email" required placeholder="Your email">
+              </label>
+            </div>
+            
+            <div class="modal-form-part">
+              <p class="modal-form-title">Comment</p>
+              <label class="modal-label" for="comment">
+                <textarea class="modal-textarea" id="comment" name="comment" rows="5" placeholder="Comment"></textarea>
+              </label>
+            </div>
+            
+            <button class="modal-btn" type="submit">Get started</button>
+          </form>
         </div>
-
-        <form class="modal-form">
-          <div class="modal-form-part">
-            <p class="modal-form-title">Name</p>
-            <label class="modal-label" for="username">
-              <input class="modal-input" id="username" name="name" type="text" required placeholder="Your name">
-            </label>
-          </div>
-          
-          <div class="modal-form-part">
-            <p class="modal-form-title">Email</p>
-            <label class="modal-label" for="email">
-              <input class="modal-input" id="email" name="email" type="email" required placeholder="Your email">
-            </label>
-          </div>
-          
-          <div class="modal-form-part">
-            <p class="modal-form-title">Comment</p>
-            <label class="modal-label" for="comment">
-              <textarea class="modal-textarea" id="comment" name="comment" rows="5" placeholder="Comment"></textarea>
-            </label>
-          </div>
-          
-          <button class="modal-btn" type="submit">Get started</button>
-        </form>
       </div>
     </div>
 

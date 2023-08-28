@@ -276,9 +276,25 @@
   .current::before {
     bottom: 5px;
   }
+  .modal-gradient {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    z-index: 20;
+    background-color: rgba(7, 34, 47, 0.7);
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
   .modal {
-    padding-left: 50px;
+    top: 100px;
+    background-color: var(--btn-text-cl);
+    width: 420px;
+    height: auto;
   }
   .modal-logo,
   .modal-logo-participle {
@@ -291,18 +307,19 @@
     gap: 8px;
   }
   .modal-form-title {
-    font-size: 24px;
+    font-size: 18px;
   }
   .modal-input,
   .modal-textarea {
     max-width: 350px;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 16px;
   }
   .modal-btn {
     padding: 15px 25px;
     max-width: 200px;
-    font-size: 24px;
+    font-size: 18px;
+    border-radius: 10px;
   }
 }
 
