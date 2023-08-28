@@ -666,7 +666,7 @@ li {
   font-size: 14px;
 }
 
-.modal-input:focus, 
+.modal-input:focus,
 .modal-textarea:focus {
   outline: none;
   border-color: var(--btn-bg-cl);
@@ -692,6 +692,7 @@ li {
   font-weight: 500;
   transition: box-shadow 200ms ease-out;
 }
-.modal-btn:hover, .modal-btn:focus {
+.modal-btn:hover,
+.modal-btn:focus {
   box-shadow: 3px 3px 4px 2px rgb(0, 0, 0, 0.3);
 }
