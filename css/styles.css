@@ -11,6 +11,10 @@
   --skills-item-bg-cl: #f5f5f5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--btn-text-cl);
   font-family: "Poppins", sans-serif;
