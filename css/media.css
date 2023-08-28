@@ -73,7 +73,8 @@
     flex-direction: row-reverse;
     align-items: flex-end;
     position: relative;
-    width:85; height:85;
+    width: 85;
+    height: 85;
   }
 
   .hero-box-img {
